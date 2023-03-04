@@ -1,3 +1,79 @@
 h1 {
-  color: red;
+  text-align: center; 
+  color: white;
+  font-family: 'Tilt Warp', cursive;
+}
+
+body {
+  background-color: #A569BD;
+  background: linear-gradient(90deg, #bc8282 0%, rgba(187,143,207,1) 35%, rgba(0,212,255,1) 100%);
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Kanit', sans-serif;
+  font-size: 20px;
+}
+
+button {
+  background: white;
+  padding: 10px;
+  border: none;
+}
+
+
+.banner {
+  background-color: #f07469;
+}
+
+.logo {
+  width: 15%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.playlist {
+  padding: 40px;
+  border:5px solid #ffffff40;
+  border-right: none;
+  width: 33.3%;
+  
+}
+
+.description {
+  padding: 40px;
+  border: 5px solid #ffffff40;
+  width: 66.66%;
+}
+
+.description > h1, h2 {
+  text-align: start;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  color:1a5276;
+}
+
+.song {
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  border-top:5px solid #ffffff40;
+  cursor: pointer;
+}
+
+.song > p {
+    padding: 25px;
+    background: #ffffff40;
+}
+
+iframe {
+  
+  border: 0px;
+  
 }

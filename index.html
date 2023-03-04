@@ -1,27 +1,105 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Code Nation Hackathon BAY 2023</title>
+    <title>Code Nation Hackathon BAY 202</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Your CSS Linked Below-->
     <link rel="stylesheet" href="/styles.css" />
     <!-- jQuery Linked Below-->
+    <link rel="icon" type="image/x-icon" href="https://cdn.cp.adobe.io/content/2/dcx/01cd7c65-2d80-4fc9-9415-a8f78ad6e51f/rendition/preview.jpg/version/0/format/jpg/dimension/width/size/1200">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Your Javascript Linked Below-->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Playfair+Display&family=Tilt+Warp&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Libre+Franklin&family=Playfair+Display&family=Tilt+Warp&display=swap" rel="stylesheet">
     <script src="/script.js" defer></script>
   </head>
   <body>
-    <h1>Welcome to the Code Nation Hackathon!!!!!!</h1>
-    <img
-      src="https://cdn.glitch.com/edcd0b68-e25b-4097-aca1-2b4ca45eb9c4%2FMinionWaving.jpg?v=1582065175337
-              "
-    />
-    <p>
-      I'm your cool new webpage. Made with
-      <a href="https://www.glitch.com">Glitch</a>.
-    </p>
-    <a href="/page-one.html"> Link to page-one.html</a>
+
+    <div class="banner">
+      <img
+      src="https://cdn.cp.adobe.io/content/2/dcx/01cd7c65-2d80-4fc9-9415-a8f78ad6e51f/rendition/preview.jpg/version/0/format/jpg/dimension/width/size/1200" class="logo"
+      />
+    </div>
+
+    <div class="container">
+      <div class="playlist">
+        <h1>Playlist</h1>
+
+        <div class="song" onclick="updateDescription(
+          `Andrea`, 
+          `“Andrea” highlights important issues occurring in Puerto Rico and how they affect women. The lyrics of the song focus on her wanting a better quality partner than gangsters and drug dealers, wanting to be treated well instead of abused.`,
+        `As if being a woman were a sin... She doesn't want a flower, she just doesn't want to be wilted.\n\nThat when she buys bread, they don't whistle at her. Not to be asked what she did yesterday.`,
+        `https://www.youtube.com/embed/gjvTQTGogUM`
+        )" >
+          <p> Andrea by Bad Bunny </p>
+        </div>
+
+        <div class="song" onclick="updateDescription(
+          'Alezzi', 
+          `Badr Alezzi made this songe for the loveres and what the lovers feel for each other on this songe, this songe makes the people who do not love , makes them fail in love. `, 
+          `My heart is in the love of your heart whispered, In the path of great love, Your adoring student is a lesson, I wrote you and it took a long time, Before I started ringing the bell, My beloved in front of me sat, I heard your voice leaning, Your presence removes darkness, Your kindness heals the ailing, Your beauty snatches the sou`,
+          `https://www.youtube.com/embed/NatICMpaSeI`
+        )" >
+          <p>True love!</p>
+        </div> 
+
+        <div class="song" onclick="updateDescription(
+          'All eyez on me ', 
+          `All Eyez On Me captures the true essence of 2Pac, his vulnerability, his fears, his trials and his tribulations. This album follows after he was charged with sexual assault, and comes after he was shot`,
+          `The feds are watching, plotting to get me Will I survive, will I die? Come on, let's imagine the possibility
+Giving me charges, lawyers making a grab
+I told the judge I was raised wrong, and that s why I burn shit.`,`https://www.youtube.com/embed/H1HdZFgR-aA`)">
+          <p>Tupac Shakur </p>
+        </div>
+    
+       <div class="song" onclick="updateDescription(
+         `Every Breath you take`,
+         `Every Breath You Take” talks about control, jealousy, persecution and bullying, camouflaged with a beautiful melody that even moves`,
+          `Every breath you take,And every move you make,Every bond you break,Every step you take,I'll be watching you,Every single day,And every word you say,Every game you play,Every night you stay,I'll be watching you`,
+        `https://www.youtube.com/embed/OMOGaugKpzs`)">
+          <p>The Police </p>
+       </div>  
+      
+  <div class="song" onclick="updateDescription(
+          `I want to break free `, 
+          `I want to break free, Queen and what freedom means in Private International Law. The theme of this mythical song could be translated as I want to free myself`,
+          `I want to break free
+I want to break free
+I want to break free from your lies
+You're so self satisfied, I don't need you
+I've got to break free
+God knows, God knows I want to break free
+
+I've fallen in love,I've fallen in love for the first time,And this time I know it's for real,I've fallen in love, yeah,God knows, God knows I've fallen in love.`,
+        `https://www.youtube.com/embed/f4Mc-NYPHaQ`
+  
+  )">
+          <p>Queen</p> 
+       </div>  
+
+
+      </div>
+
+
+      <div class="description">
+        <h1>Description</h1>
+        <h2 id="descriptionTitle"> </h2>
+        <p id="descriptionParagraph"> click on the song</p>
+        <p id="descriptionLyrics"></p>
+        
+        
+
+        <iframe id="video" width="100%" height="315"       
+          src="" 
+          title="YouTube video player"></iframe>
+      </div> 
+    </div>
+
+    <br>
+    <br>
+    <br>
+
   </body>
 </html>
